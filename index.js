@@ -43,7 +43,7 @@ async function createSpotifyAccount() {
     'za', 'et', 'ke', 'gh', 'ng', 'dz'
   ]
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: "new",
     args: [
       `--user-agent=${userAgentsList[Math.floor(Math.random() * userAgentsList.length)].toString()}`,
       //`--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36`,
